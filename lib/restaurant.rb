@@ -24,4 +24,9 @@ class Restaurant
   def customers
     self.reviews.map {|rev| rev.customer}
   end
+
+  def customers_first_name
+    self.customers.map {|cust| cust.first_name}
+  end
+
 end
